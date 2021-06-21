@@ -1,5 +1,6 @@
 <?php
 	include('conexion.php');
+	$v1=$_POST["id_cliente"];
 ?>
 <html lang="es">
 	<head>
