@@ -1,6 +1,6 @@
 <?php
 
-$conexion=mysqli_connect("localhost","root", "", "tienda_ropa");
+$conexion=mysqli_connect("localhost","root", "A@roncruz123", "tienda_ropa");
 
 /*if($conexion){
 	echo "Conectado a la Base de Datos";

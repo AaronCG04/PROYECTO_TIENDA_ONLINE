@@ -6,7 +6,6 @@
 -- Tiempo de generación: 20-06-2021 a las 04:12:28
 -- Versión del servidor: 10.4.17-MariaDB
 -- Versión de PHP: 8.0.0
-
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
@@ -22,7 +21,6 @@ SET time_zone = "+00:00";
 --
 
 -- --------------------------------------------------------
-
 --
 -- Estructura de tabla para la tabla `carrito`
 --
@@ -302,3 +300,10 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+insert into direcciones values("D01","S/C","IXTLAHUACA","50770","LA CONCEPCION ENYEGE","MEXICO","MEXICO");
+insert into cliente values("C01","AARON","CRUZ","aaron.cruzgonzalez@gmail.com","holaquehace","7122475545","D01");
+insert into cliente values("C02","AARON","CRUZ","aaron.cruzgonzalez2@gmail.com","holaquehace","7122475545","D01");
+select id_carrito from carrito where id_cliente="C02";
+insert into carrito values("CAC02","C02");
+insert into carrito values("CAC02","C02");
+insert into carrito_producto values("CAC02","1",1,34.2);

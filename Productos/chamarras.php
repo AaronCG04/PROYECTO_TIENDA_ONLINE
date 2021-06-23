@@ -1,6 +1,6 @@
 <?php
 	include('conexion.php');
-	$var1 = $_POST["id_cliente"];
+	$var1 = $_GET["id_cliente"];
 ?>
 <html lang="es">
 	<head>
@@ -27,7 +27,7 @@
     <div id="principal">
 	  <header>
 			<div id="logo">
-				<img src="imagenes/logo.png" id="logo_im" />
+				<img src="../carrito_compras/imagenes/deer_icon.jpg" id="logo_im" />
 				<div id="nombre">
 				
 			</div>
@@ -64,7 +64,7 @@
 							<p class="card-text">Talla: <?php echo $row['talla']; ?></p>
                             <p class="card-text">Color: <?php echo $row['color']; ?></p>
                             <p class="card-text">Disponibles: <?php echo $row['stock']; ?></p>  
-                            <a href="carrito.php?procucto=<?php echo $row['id_producto'] ;?>" class="btn btn-primary">>Añadir a carrito</a>
+                            <a href="../carrito_compras/carrito.php?producto=<?php echo $row['id_producto'];?>&id_cliente=<?php echo $_GET["id_cliente"]?>" class="btn btn-primary">>Añadir a carrito</a>
                             <br>
 						<?php } ?>
         
